@@ -113,6 +113,13 @@ ul li a{
   height: 100vh;
 }
 
+.main1{
+  max-width: 1300px;
+    color: white;
+    margin: 0 auto;
+    height: 620px;
+}
+
 .hero-container{
     color: white;
   max-width: 1000px;
