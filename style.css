@@ -47,10 +47,13 @@ z-index:999;
     line-height: 71px;
     font-size: 48px;
 }
-
+.navbar img{
+  height:50px;
+}
 .navbar a{
   text-decoration: none;
-
+  display: flex;
+  align-items: center;
 }
 .navbar h1{
   transition: color 0.125s;
@@ -74,8 +77,10 @@ ul{
   list-style: none;
   align-items: center;
   font-weight: 700;
-  max-width: 500px;
-  gap:70px;
+  min-width: 400px;
+  width:600px;
+  max-width: 700px;
+  justify-content: space-evenly;
 }
 ul li{
   transition: opacity 0.3s;
@@ -151,17 +156,29 @@ ul li a{
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.15s;
+  border-radius: 50px;
+  border:none;
 }
 .OK:hover{
   color:rgb(187, 109, 19);
   background:rgb(247, 246, 246);
 }
 
+
+.none{
+  height:200px;
+}
 .quote{
   color:white;
   text-align: center;
   font-style: italic;
   font-size: 1.7rem;
+}
+.songwcontrol{
+  transition: transform 0.5s;
+}
+.songwcontrol:hover{
+transform:scale(1.1);
 }
 .songs{
 display: flex;
@@ -170,7 +187,8 @@ align-items: center;
   max-width: 1300px;
   padding: 100px;
   margin: 0 auto 0 auto;
-  gap:30px;
+  column-gap: 30px;
+  row-gap: 200px;
   flex-wrap: wrap;
 }
 .song-card{
@@ -220,17 +238,38 @@ align-items: center;
 .song3{
   margin-top: 200px;
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 200px;
+}
 .footer p{
  text-align: center;
  color:white;
  font-style: italic;
 height:50px;
+line-height: 50px;
+
+}
+
+.footer img{
+  width: 80px;
+}
+
+@media(max-width: 888px){
+  .navbar ul li a, .navbar .home{
+    font-size: 30px;
+  }
+
 }
 @media(max-width: 768px){
   .navbar ul{
     max-width: 100%;
     top:100px;
   }
+  
   .hamburger{
     display: block;
     cursor: pointer;
@@ -255,5 +294,22 @@ height:50px;
 
   .navlist.active{
     left:0;
+  }
+
+  .songs.active{
+    left:-100%;
+  }
+
+  .hero-container{
+    max-width: 400px;
+  }
+  .hero-text{
+    font-size: 2.4rem;
+  }
+
+  .quote{
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 1.4rem;
   }
 }

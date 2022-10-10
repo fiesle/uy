@@ -5,3 +5,10 @@ hamburger.addEventListener('click',()=>{
   hamburger.classList.toggle("active");
   navlist.classList.toggle("active");
 })
+
+const songs = document.querySelector('.songs-toggle');
+
+songs.addEventListener('click', ()=>{
+  navlist.classList.toggle("active");
+})
+
