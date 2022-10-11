@@ -47,9 +47,7 @@ z-index:999;
     line-height: 71px;
     font-size: 48px;
 }
-.navbar img{
-  height:50px;
-}
+
 .navbar a{
   text-decoration: none;
   display: flex;
